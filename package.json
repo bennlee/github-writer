@@ -1,0 +1,14 @@
+{
+  "name": "github-writer",
+  "version": "0.1.0",
+  "author": "Bennett Lee",
+  "license" : "MIT",
+  "scripts": {
+    "build": "rm -r dist/* && npx webpack --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}

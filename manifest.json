@@ -1,0 +1,26 @@
+{
+  "name": "Text Editing Helper for GitHub",
+  "description": "text editing helper for github pr, issue and comment",
+  "version": "0.1.0",
+  "icons": {
+    "16": "./src/img/icon.png",
+    "48": "./src/img/icon.png",
+    "128": "./src/img/icon.png"
+  },
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://oss.navercorp.com/*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "./dist/bundle.js"
+      ]
+    }
+  ]
+}
