@@ -8,9 +8,6 @@
     "128": "./src/img/icon.png"
   },
   "manifest_version": 3,
-  "permissions": [
-    "activeTab"
-  ],
   "content_scripts": [
     {
       "matches": [
